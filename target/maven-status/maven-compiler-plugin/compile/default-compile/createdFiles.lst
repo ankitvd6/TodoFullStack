@@ -1,0 +1,12 @@
+todoService\todo\converter\RequestTodoToTodoEntityConverter.class
+todoService\todo\rest\TodoResource.class
+todoService\todo\entity\Todo.class
+todoService\todo\BackendTodoApplication.class
+todoService\todo\config\ApiConfig.class
+todoService\todo\converter\TodoEntityToResponseConverter.class
+todoService\todo\request\RequestTodo.class
+todoService\todo\repository\TodoRepository.class
+todoService\todo\enums\Priority.class
+todoService\todo\response\ResponseTodo.class
+todoService\todo\config\ConversionConfig.class
+todoService\todo\config\DatabaseConfig.class

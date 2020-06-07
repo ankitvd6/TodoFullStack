@@ -1,0 +1,12 @@
+D:\Projects\FullStack-Todo-angular-java\todo\src\main\java\todoService\todo\request\RequestTodo.java
+D:\Projects\FullStack-Todo-angular-java\todo\src\main\java\todoService\todo\repository\TodoRepository.java
+D:\Projects\FullStack-Todo-angular-java\todo\src\main\java\todoService\todo\config\ConversionConfig.java
+D:\Projects\FullStack-Todo-angular-java\todo\src\main\java\todoService\todo\enums\Priority.java
+D:\Projects\FullStack-Todo-angular-java\todo\src\main\java\todoService\todo\config\ApiConfig.java
+D:\Projects\FullStack-Todo-angular-java\todo\src\main\java\todoService\todo\rest\TodoResource.java
+D:\Projects\FullStack-Todo-angular-java\todo\src\main\java\todoService\todo\BackendTodoApplication.java
+D:\Projects\FullStack-Todo-angular-java\todo\src\main\java\todoService\todo\entity\Todo.java
+D:\Projects\FullStack-Todo-angular-java\todo\src\main\java\todoService\todo\converter\TodoEntityToResponseConverter.java
+D:\Projects\FullStack-Todo-angular-java\todo\src\main\java\todoService\todo\config\DatabaseConfig.java
+D:\Projects\FullStack-Todo-angular-java\todo\src\main\java\todoService\todo\converter\RequestTodoToTodoEntityConverter.java
+D:\Projects\FullStack-Todo-angular-java\todo\src\main\java\todoService\todo\response\ResponseTodo.java
