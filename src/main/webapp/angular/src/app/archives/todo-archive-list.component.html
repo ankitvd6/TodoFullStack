@@ -1,0 +1,29 @@
+<div class="jumbotron p-4">
+    <p class="lead">Here you can find list of completed tasks</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-md" [routerLink]="['']" role="button">Home</a>
+    </p>
+</div>
+
+<div class="list-container"> 
+    <div class="d-flex justify-content-start flex-wrap">
+        <ul *ngFor="let todo of todos$ | async | sortBy: sortOrder: sortParameter" class="flex-item">
+            <li *ngIf="todo.heading.toLowerCase().includes(searchInput.toLowerCase()) && todo.status === 'completed'">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{todo.heading}}</h5>                              
+                        <h6 class="card-subtitle sm-2 text-muted">{{todo.dueDate | date}}</h6><br><br>
+                        <p [ngClass]="{'badge': true, 'card-text': true, 'badge-danger': todo.priority==='high', 
+                        'badge-warning': todo.priority==='medium', 'badge-primary': todo.priority==='low'}">{{todo.priority | uppercase}}</p><br>
+                       
+                        <div class="progress" style="height: 18px">
+                            <div *ngIf="todo.status === 'completed'" class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">{{todo.status | titlecase }}</div>
+                        </div><br>
+                        <a (click)="onDeleteTodoItem(todo)" class="card-link btn btn-danger btn-sm">Delete</a>
+                        <a routerLink="/{{ todo.id }}" class="card-link btn btn-info btn-sm">Description</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

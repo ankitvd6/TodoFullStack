@@ -1,0 +1,62 @@
+<!-- <div class="col-sm">
+    <a class="btn btn-primary btn-sm" [routerLink]="['/add']"  role="button">New</a>
+</div> -->
+<!-- <div class="jumbotron p-4">
+<div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
+  </div>
+</div> -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group form-inline">                            
+                    <label for="exampleInputEmail1">Search : </label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Name" [(ngModel)]="searchInput">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group form-inline">
+                    <label for="exampleFormControlSelect1">Filter By:</label>
+                    <select class="form-control" [(ngModel)]="sortParameter">
+                        <option value="" selected>Select</option>
+                        <option value="heading">Name</option>
+                        <option value="date">Date</option>
+                        <option value="priority">Priority</option>
+                        <option value="status">Status</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group form-inline">
+                    <label for="exampleFormControlSelect1">Sort By:</label>
+                    <select class="form-control" [(ngModel)]="sortOrder">
+                        <option value="" selected>All</option>
+                        <option *ngIf="sortParameter === 'heading' || sortParameter === 'date' " value="asc">Ascending</option>
+                        <option *ngIf="sortParameter === 'heading' || sortParameter === 'date' " value="desc">descending</option>
+                        <!-- <option value="" selected>All</option> -->
+                        <option *ngIf="sortParameter === 'priority'" value="low">Low</option>
+                        <option *ngIf="sortParameter === 'priority'" value="medium">Medium</option>
+                        <option *ngIf="sortParameter === 'priority'" value="high">High</option>
+                        <option *ngIf="sortParameter === 'status'" value="new">New</option>
+                        <option *ngIf="sortParameter === 'status'" value="in progress">In Progress</option>
+                        <option *ngIf="sortParameter === 'status'" value="completed">Completed</option>
+
+                    </select>
+                </div>
+            </div>
+          <!-- <div class="col-sm">
+            <a class="btn btn-primary btn-sm" [routerLink]="['/add']"  role="button">New</a>
+          </div> -->
+          <div class="row" style="height: 32px;" role="group" aria-label="Basic example">
+            <a type="button" class="btn btn-sm btn-primary mr-1" [routerLink]="['/add']">New</a>
+            <!-- <a type="button" class="btn btn-sm btn-secondary mr-1" [routerLink]="['']">All</a> -->
+            <button type="button" class="btn btn-sm btn-success" [routerLink]="['/archives']">Archives</button>
+          </div>
+        </div>
+    </div>    
+</div>
+<td-item-list [searchInput]="searchInput" [sortParameter]="sortParameter" [sortOrder]="sortOrder"></td-item-list>
+<!-- <router-outlet></router-outlet> -->

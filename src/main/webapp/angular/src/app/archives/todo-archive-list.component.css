@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+.list-container {
+    width: 100%;
+    margin: 10px auto;
+}
+.flex-item{
+    padding: 5px;
+    /* margin-left: 0 auto; */
+}
+.card{
+    width: 250px;
+    /* margin: 10px auto; */
+}
+.card:hover{
+    cursor: pointer;
+}
+.card a {
+    color: white;
+}
+li{
+    list-style: none;
+}
+.card p{
+    font-size: 12px;
+}
+/* ul {
+    display: inline-block;
+    margin: 0 10px;
+} */

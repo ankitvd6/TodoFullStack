@@ -1,0 +1,36 @@
+<div *ngIf="todoItem" class="cnt-0">
+    <div class="card" style="width: 25rem;">
+        <div class="card-header">
+           <div class="progress" style="height: 18px">
+                <div *ngIf="todoItem.status === 'new'" class="progress-bar bg-info" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">{{todoItem.status | titlecase }}</div>
+                <div *ngIf="todoItem.status === 'in progress'" class="progress-bar bg-warning" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">{{todoItem.status | titlecase }}</div>
+                <div *ngIf="todoItem.status === 'completed'" class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">{{todoItem.status | titlecase }}</div>
+            </div>
+            <!-- <h5 [ngClass]="{'badge': true, 'card-text': true, 'col-sm-3': true, 'badge-danger': todoItem.priority==='high', 
+        'badge-warning': todoItem.priority==='medium', 'badge-primary': todoItem.priority==='low'}">{{todoItem.priority | uppercase}}</h5> -->
+          </div>
+        <div class="card-body">
+            <h5 [ngClass]="{'badge': true, 'card-text': true, 'col-sm-3': true, 'badge-danger': todoItem.priority==='high', 
+        'badge-warning': todoItem.priority==='medium', 'badge-primary': todoItem.priority==='low'}">{{todoItem.priority | uppercase}}</h5><br>
+            <h5 class="card-title">{{todoItem.heading | uppercase}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{todoItem.dueDate | date}}</h6>
+            <br><p class="card-text">{{todoItem.description}}</p><br>
+            <a (click)="editTodo(todoItem)" class="card-link btn btn-info">Edit</a>
+            <a class="card-link btn btn-secondary" [routerLink]="['']">Home</a>
+        </div>
+    </div>
+</div>
+
+    <!-- <div class="cnt-1">
+        <h3>{{todoItem.heading}}</h3>
+        <div class="description">
+            <p>{{todoItem.description}}</p>
+        </div>
+        <div>{{todoItem.dueDate | date}}</div>
+        <div class="actions">
+            <button class="edit" name="edit" (click)="editTodo(todoItem)">Edit</button>
+        </div>
+        <div class="actions">
+            <button class="delete" name="back" (click)="goBack()">Go Back</button>
+        </div>
+    </div> -->

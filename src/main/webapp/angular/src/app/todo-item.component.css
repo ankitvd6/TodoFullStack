@@ -1,0 +1,39 @@
+/* .cnt-0{
+    
+} */
+.card{
+    width: 300px;
+    margin: 20px auto;
+}
+.card a {
+    color: whitesmoke;
+}
+.cnt-1{
+    margin: 20px auto;
+    border: 2px solid ;
+    border-color: #53ace4;
+    width: 350px;
+    height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+.cnt-1 h3{
+    color: rgb(221, 132, 59);
+}
+
+.actions{
+    margin-top: 5px;
+    text-align: right;
+}
+button {
+    background-color: #53ace4;
+    padding: 2px 4px;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+button:hover{
+    background-color: red;
+    cursor: pointer;
+}
