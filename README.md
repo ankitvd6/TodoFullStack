@@ -1,5 +1,5 @@
 **Make sure port 8080 and 4200 are not preoccupied.** If occupied please free these ports as the app uses these two ports. Although these 
-properties can be modfied. The post 4200 is used by angular client and can be modified by small change in the ng serve command by using 
+properties can be modfied. The port 4200 is used by angular client and can be modified by small change in the ng serve command by using 
 **ng serve --port <PORT_NUMBER>** rather than using ng serve command to start angular client.
 
 **Steps to create the database:**
