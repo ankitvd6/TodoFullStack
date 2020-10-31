@@ -1,3 +1,7 @@
+<img src="https://img.shields.io/badge/language-Java-blue?style=flat"/>
+<img src="https://img.shields.io/badge/framework-Spring-brightgreen?style=flat"/>
+<img src="https://img.shields.io/badge/frontend-Angular-red?style=flat"/>
+<img src="https://img.shields.io/github/issues-pr-closed/ankitvd6/TodoFullStack?style=flat"/>
 **Youtube demo and setup URLs:**<br>
 [Demo](https://youtu.be/Ea9cM2vyxMo)<br>
 [Setup](https://youtu.be/ylaSScQENcI)<br>
