@@ -4,6 +4,7 @@
 <img src="https://img.shields.io/badge/frontend-Angular-red?style=flat">
 <img src="https://img.shields.io/github/issues-pr-closed/ankitvd6/TodoFullStack?style=flat"/>
 </p>
+
 **Youtube demo and setup URLs:**<br>
 [Demo](https://youtu.be/Ea9cM2vyxMo)<br>
 [Setup](https://youtu.be/ylaSScQENcI)<br>
